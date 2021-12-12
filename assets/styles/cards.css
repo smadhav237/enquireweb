@@ -30,19 +30,26 @@ body {
   height: 100vh;
   background-color: #ece0e8;
 }
-
+h1 {
+    padding-left:5rem;
+    padding-top:1rem;
+    font-family: "Inconsolata", monospace;
+    margin:0;
+   }
 .artboard {
   display: flex;
   flex-flow: row;
-  align-items: center;
-  justify-content: center;
-  padding: 4rem;
-  height: 100%;
+  align-items: left;
+  justify-content: left;
+  padding: 0rem;
+  padding-bottom: 0rem;
+  height: auto;
   position: relative;
+  float:center;
 }
 @media (max-width: 37.5em) {
   .artboard {
-    padding: 1rem;
+    padding: 0rem;
   }
 }
 
