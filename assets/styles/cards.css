@@ -38,9 +38,9 @@ h1 {
    }
 .artboard {
   display: flex;
-  flex-flow: row;
+  flex-wrap: wrap;
   align-items: left;
-  justify-content: left;
+  justify-content: flex-start;
   padding: 0rem;
   padding-bottom: 0rem;
   height: auto;
@@ -50,9 +50,9 @@ h1 {
 @media (max-width: 37.5em) {
   .artboard {
     padding: 0rem;
+    width:100%;
   }
 }
-
 .card {
   flex: initial;
   position: relative;
@@ -61,6 +61,7 @@ h1 {
   -moz-perspective: 200rem;
   perspective: 200rem;
   margin: 2rem;
+  float :left;
 }
 .card__side {
   height: 40rem;
@@ -82,6 +83,7 @@ h1 {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: auto;
+  object-fit: cover;
 }
 .card__side--back {
   background-color: #fff;
@@ -91,6 +93,7 @@ h1 {
   transform: rotateY(0);
 }
 .card:hover .card__side--front {
+  filter: blur(8px);
   transform: rotateY(-180deg);
 }
 .card__theme {
@@ -116,7 +119,8 @@ h1 {
 .card__title {
   font-family: "VT323", monospace;
   text-transform: uppercase;
-  font-size: 6rem;
+  font-size: 6rem ;
+  -webkit-text-stroke: 2px black;
   font-weight: 100;
 }
 .card__cover {
