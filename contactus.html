@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <style media="screen">
+
+
+ /* Styling of Iconslist */
+
+
+.iconlist {
+  align-items: center;
+
+  left:2%;
+  /* transform: translate(-50%, -50%); */
+  display:inline-flex;
+}
+
+.icons{
+  list-style: none;
+}
+
+
+.icons a {
+  position: relative;
+  width:60px;
+  height:60px;
+  display:block;
+  text-align:center;
+  margin:0 10px;
+  border-radius: 50%;
+  padding: 6px;
+  box-sizing: border-box;
+  text-decoration:none;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+  background: linear-gradient(0deg, #ddd, #fff);
+  transition: .5s;
+}
+
+.icons a:hover {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  text-decoration:none;
+}
+
+.icons a .fab {
+  widht: 100%;
+  height:100%;
+  display:block;
+  background: linear-gradient(0deg, #fff, #ddd);
+  border-radius: 50%;
+  line-height: calc(60px - 12px);
+  font-size:24px;
+  color: #262626;
+  transition: .5s;
+}
+
+.insta a:hover .fab {
+  color:#e4405f ;
+}
+
+.twitter a:hover .fab {
+  color: #1DA1F2;
+}
+
+.fb a:hover .fab {
+  background: #1877F2;
+  color:white;
+}
+
+h3{
+  text-align:center;
+}
+
+.discord a:hover .fab {
+  background:#738adb;
+  color:white;
+}
+
+.linkedin a:hover .fab {
+  color:#3b5998 ;
+}
+.ch a:hover .fab {
+  background:white ;
+}
+
+
+/* Styling of Mail,Location and Suggestion */
+
+.seondlist{
+  list-style-type:none;
+  display: inline;
+}
+
+
+.mailandloc{
+display:inline;
+margin-left:7vw;
+}
+
+
+
+.mailandloc a{
+  text-decoration: none;
+      color: inherit;
+}
+
+    </style>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/b30c65c99f.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+
+  <div class="col-sm-7">
+    <h3>CONTSCT US</h3>
+  </div>
+ <div class="row">
+
+
+
+<!-- Social Media accounts -->
+    <ul class="iconlist">
+      <div class="col-sm-2">
+        <li class="icons insta"><a href="https://www.instagram.com/enquire_nitc/?hl=en"><i class="icon fab fa-instagram"></i></a></li>
+      </div>
+      <div class="col-sm-2">
+        <li class="icons twitter"><a href="https://twitter.com/enquirequizclub"><i class="icon fab fa-twitter"></i></a></li>
+      </div>
+      <div class="col-sm-2">
+        <li class="icons fb"><a href="https://www.facebook.com/enquirequizclub/"><i class="icon fab fa-facebook-f "></i></a></li>
+      </div>
+      <div class="col-sm-2">
+        <li class="icons discord"><a href="https://discord.gg/VAr2rUZG" class="dicon"><i class="icon fab fa-discord"></i></a></li>
+      </div>
+
+     <div class="col-sm-2">
+        <li class="icons linkedin"><a href="https://in.linkedin.com/company/enquireclubnitc"><i class="icon fab fa-linkedin"></i></a></li>
+     </div>
+     <div class="col-sm-2">
+       <li class="icons ch"><i><a href="https://www.clubhouse.com/club/enquire-nitc" class="clubhouse"><img src="images/clubhouse3.png" onmouseover="hover(this);" onmouseout="unhover(this);"> </a></li></i>
+     </div>
+    </ul>
+   </div>
+
+
+
+
+
+<!-- Mail,Location and Suggestion box -->
+
+   <div class=" col-sm-12">
+    <ul class="secondlist">
+      <li class="mailandloc">  <i class="emailicon fas fa-envelope fa-2x"></i> enquireclub@nitc.ac.in </li>
+
+      <li class="mailandloc"><i class="location fas fa-map-marker fa-2x"></i> <a href="https://goo.gl/maps/rXwcDBwoVTQvQNtXA">National Institute Of Technology,Calicut</a>
+        </li>
+        <li class="mailandloc"><i class="fas fa-lightbulb fa-2x"></i>Have a suggestion?
+        <a href="https://docs.google.com/forms/d/19lWFX6EaIO3EnDcHA4P1C-w_qLVnLPjXSjXWaR6LeJk/edit">Click here</a></li>
+    </ul>
+
+
+   </div>
+
+
+
+<script type="text/javascript">
+function hover(element) {
+  console.log(element.src)
+  element.setAttribute('src', 'images/clubhouse4.png');
+}
+
+function unhover(element) {
+  element.setAttribute('src', 'images/clubhouse3.png');
+}
+
+// function emailhover()
+
+
+
+</script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
