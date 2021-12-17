@@ -152,7 +152,7 @@ h1 {
 }
 .card__details {
   font-family: "Inconsolata", monospace;
-  padding: 4rem 2rem;
+  padding-top: 5%;
 }
 .card__details ul {
   list-style: none;
@@ -165,7 +165,7 @@ h1 {
   padding: 1rem;
 }
 .card__details ul li:not(:last-child) {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #000;
 }
 @media only screen and (max-width: 37.5em), only screen and (hover: none) {
   .card {
