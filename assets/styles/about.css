@@ -1,0 +1,28 @@
+/* Carousel */
+
+.carousel-inner{
+  padding-top:
+  width:100%;
+  max-height: 100vh;
+}
+
+
+
+
+/* About Us */
+
+.about h1{
+  color:#ff4532;
+  padding:2vh 0;
+
+}
+
+.about{
+  margin:15vh;
+  border:2px solid white;
+
+}
+
+.about p{
+  font-size:1.1rem;
+}

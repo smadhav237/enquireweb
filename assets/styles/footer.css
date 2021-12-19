@@ -1,0 +1,117 @@
+.iconlist {
+  align-items: center;
+  flex-wrap: nowrap;
+  display:flex;
+  box-sizing: border-box;
+}
+
+.footer{
+padding-top:3vh;
+border-top:3px solid white;
+}
+.icons{
+  list-style: none;
+  width:54px;
+  height: 80px;
+}
+
+
+.icons a {
+  text-decoration:none;
+
+}
+
+.h3{
+font-family: 'Oswald';
+}
+
+
+.icon{
+  border: 5px solid #bfbfbf;
+}
+
+.icons a .fab {
+  /* font-size:0.9em; */
+  width: 90%;
+  height:110%;
+  display:block;
+  background:#bfbfbf ;
+  border-radius:50%;
+
+
+  color: #212121;
+}
+
+.insta a:hover .fab {
+  color:#e4405f ;
+}
+
+.twitter a:hover .fab {
+  color: #1DA1F2;
+}
+
+.fb a:hover .fab {
+  background: #1877F2;
+  color:white;
+}
+
+
+.discord a:hover .fab {
+  background:#738adb;
+  color:white;
+}
+
+.linkedin a:hover .fab {
+  color:#3b5998 ;
+}
+
+
+.clubhouse {
+  position: relative;
+  width:70px;
+  height:70px;
+  display:block;
+  text-align:center;
+  margin:0 10px;
+  border-radius: 50%;
+  padding: 6px;
+  box-sizing: border-box;
+  text-decoration:none;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+  background: #bfbfbf;
+  transition: .5s;
+}
+
+
+
+
+
+
+/* Styling of Mail,Location and Suggestion */
+
+.secondlist{
+  font-size:0.9em;
+  list-style-type:none;
+  display: flex;
+  width:60px;
+}
+
+
+.mailandloc{
+display:inline;
+margin-left:7vw;
+}
+
+
+
+.mailandloc a{
+  text-decoration: none;
+      color: inherit;
+}
+
+.secondlist span:hover{
+  color:#ff4532;
+}
+hr{
+  color:white;
+}
