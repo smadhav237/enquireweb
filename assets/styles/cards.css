@@ -28,14 +28,25 @@ html {
 
 body {
   height: 100vh;
-  background-color: #ece0e8;
+  background-color: #212121;
 }
 h1 {
     padding-left:5rem;
     padding-top:1rem;
     font-family: "Inconsolata", monospace;
     margin:0;
+    color:#ff4532;
    }
+fieldset{
+    color:#ff4532;
+    align-self: center;
+    margin-top: -6rem;
+}
+legend{
+    font-family: "Inconsolata",monospace;
+    font-weight: 1000;
+    font-size: 32;
+}
 .artboard {
   display: flex;
   flex-wrap: wrap;
@@ -56,15 +67,20 @@ h1 {
 .card {
   flex: initial;
   position: relative;
-  height: 40rem;
+  height: 50rem;
   width: 40rem;
   -moz-perspective: 200rem;
   perspective: 200rem;
   margin: 2rem;
   float :left;
+  border-top: 10rem solid white;
+  border-right: 1rem solid white;
+  border-left: 1rem solid white;
+  border-bottom: 2rem solid white;
+
 }
 .card__side {
-  height: 40rem;
+  height: 100%;
   transition: all 0.8s ease;
   position: absolute;
   top: 0;
@@ -74,10 +90,11 @@ h1 {
   /* We don't want to see the back part of the element. */
   backface-visibility: hidden;
   /* We don't want to see the back part of the element. */
-  border-radius: 3px;
-  overflow: hidden;
+  border-radius: 1px;
+  overflow: auto;
   /* The image is overflowing the parent. */
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15);
+  margin-top: 0rem;
 }
 .card_image{
   background-position: center center;
@@ -93,7 +110,6 @@ h1 {
   transform: rotateY(0);
 }
 .card:hover .card__side--front {
-  filter: blur(8px);
   transform: rotateY(-180deg);
 }
 .card__theme {
@@ -152,7 +168,8 @@ h1 {
 }
 .card__details {
   font-family: "Inconsolata", monospace;
-  padding-top: 5%;
+  word-wrap: break-word;
+  padding-top: 0%;
 }
 .card__details ul {
   list-style: none;
