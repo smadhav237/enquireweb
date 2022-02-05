@@ -11,13 +11,14 @@ border-top:3px solid white;
 }
 .icons{
   list-style: none;
-  width:54px;
+  width:45px;
   height: 80px;
 }
 
 
 .icons a {
   text-decoration:none;
+  font-size: 15px;
 
 }
 
@@ -32,7 +33,7 @@ font-family: 'Oswald';
 
 .icons a .fab {
   /* font-size:0.9em; */
-  width: 90%;
+  width: 92%;
   height:110%;
   display:block;
   background:#bfbfbf ;
@@ -72,7 +73,6 @@ font-family: 'Oswald';
   height:70px;
   display:block;
   text-align:center;
-  margin:0 10px;
   border-radius: 50%;
   padding: 6px;
   box-sizing: border-box;
@@ -80,6 +80,7 @@ font-family: 'Oswald';
   box-shadow: 0 10px 15px rgba(0,0,0,0.3);
   background: #bfbfbf;
   transition: .5s;
+  border-right:30vw;
 }
 
 
@@ -93,13 +94,12 @@ font-family: 'Oswald';
   font-size:0.9em;
   list-style-type:none;
   display: flex;
-  width:60px;
 }
 
 
 .mailandloc{
 display:inline;
-margin-left:7vw;
+margin-left:4vw;
 }
 
 
