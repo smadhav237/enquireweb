@@ -125,7 +125,7 @@ header ul li a:hover:after {
 .toggle-button {
     position: absolute;
     top: 2.5rem;
-    right: 1rem;
+    right: 1.5rem;
     display: none;
     flex-direction: column;
     justify-content: space-between;
@@ -142,7 +142,9 @@ header ul li a:hover:after {
 }
 
 @media (max-width: 900px) {
-
+header{
+  flex-direction: column;
+}
     .toggle-button {
         display: flex;
     }
@@ -167,8 +169,10 @@ header ul li a:hover:after {
         padding: 0.2rem 1rem;
     }
 
-    .navbar-links.active {
-        display: flex;
+      .navbar-links.active {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
     }
 }
 
