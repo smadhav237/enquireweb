@@ -10,7 +10,7 @@ box-sizing: border-box;
 
 
 h1,.enquirenav, .header ul,h3{
-  font-family: 'Oswald';
+  font-family: 'Frank Ruhl Libre', sans-serif;
 }
 
 
@@ -18,8 +18,6 @@ body {
 background: #212121;
 color: #bfbfbf;
 font-family: 'Merriweather';
-
-
 }
 
 
@@ -42,12 +40,11 @@ z-index: 100000;
 
 header .enquirenav {
 position: relative;
-font-weight: 900;
+font-weight:550;
 color: #bfbfbf;
 text-decoration: none;
 font-size: 2em;
 text-transform: uppercase;
-letter-spacing: 2px;
 transition: 1s;
 }
 header.sticky {
@@ -90,12 +87,22 @@ header.sticky ul li a {
 color: #212121;
 }
 
+header.sticky .bar {
+  transition: 1s;
+background: #212121;
+}
+header.sticky .toggle-button {
+    top: 1rem;
+    right: 1rem;
+    transition:1s;
+  }
+
 header ul li a:hover{
 text-decoration: none;
 color:#ff4532;
 }
 
-header ul li a:after {
+header ul li a:after  {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -111,6 +118,62 @@ header ul li a:after {
 header ul li a:hover:after {
   width: 100%;
   left: 0;
+}
+
+
+/* Hamburger */
+.toggle-button {
+    position: absolute;
+    top: 2.5rem;
+    right: 1.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    transition: 1s;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #bfbfbf;
+    border-radius: 10px;
+}
+
+@media (max-width: 900px) {
+header{
+  flex-direction: column;
+}
+    .toggle-button {
+        display: flex;
+    }
+    .navbar{
+      display:inline-block;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: 0.2rem 1rem;
+    }
+
+      .navbar-links.active {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+    }
 }
 
 

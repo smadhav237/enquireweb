@@ -25,24 +25,47 @@
 
  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Oswald:wght@500&family=Roboto+Slab:wght@700&family=Source+Serif+4:wght@200&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Frank+Ruhl+Libre:wght@500&display=swap&family=Roboto+Slab:wght@700&family=Source+Serif+4:wght@200&display=swap" rel="stylesheet">
 
   </head>
 
   <body>
 
+    <nav class="navbar">
+      <header>
+       <a href="#" class="enquirenav">Enquire Quiz Club</a>
+       <!-- <div class="brand-title">Brand Name</div> -->
 
-    <header>
-     <a href="#" class="enquirenav">Enquire Quiz Club</a>
-     <ul>
-       <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="#footer">Contact Us</a></li>
-     </ul>
-   </div>
-   </header>
-   <section class="banner"></section>
+       <a href="#" class="toggle-button">
+         <span class="bar"></span>
+         <span class="bar"></span>
+         <span class="bar"></span>
+       </a>
+       <div class="navbar-links">
+
+       <ul >
+             <li><a href="#">Home</a></li>
+              <li><a href="#aboutus">About Us</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="#footer">Contact Us</a></li>
+       </ul>
+              </nav>
+     </div>
+     </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
  <!-- Carousel -->
@@ -68,7 +91,7 @@
 
 <div class="container about" >
 <h1>ABOUT US</h1>
-<p class=''>
+<p id='aboutus'>
 ﻿The itinerary of Enquire Quiz Club  authorised in Calicut, was inaugurated by a class of vibrant quizzers in 2002. It has been 2 decades since Enquire has had a plethora of
  episodes and been conducting quizzes all over Kerala,Andhra pradesh and Telangana. The word  Enquire is also one of the most extensively acknowledged signs in the Kerala
  quizzing circle and is well known for its immense trait of the quizzes. The club further conducts quizzes at several schools and colleges across the state such as Enquesta.
@@ -135,13 +158,13 @@ and RAGAM through handling quizzing events.The Enquire Quiz Club, one of the spl
 
    <!-- Mail,Location and Suggestion box -->
 
-   <div class=" col-sm-5">
+   <div class="col-lg-5 container">
     <ul class="secondlist">
       <li class="mailandloc">  <i class="emailicon fas fa-envelope fa-2x"></i> <span>enquireclub@nitc.ac.in</span> </li>
 
       <li class="mailandloc" data-toggle="tooltip" data-placement="bottom" title="Click here to view the place in Map"><i class="location fas fa-map-marker fa-2x"></i>
          <span>
-           <a href="https://goo.gl/maps/rXwcDBwoVTQvQNtXA">National Institute Of Technology,Calicut</a>
+           <a href="https://goo.gl/maps/rXwcDBwoVTQvQNtXA">National Institute of Technology,Calicut</a>
          </span>
         </li>
         <li class="mailandloc" data-toggle="tooltip" data-placement="bottom" title="Click here to fill Suggestions form"><i class="fas fa-lightbulb fa-2x" ></i>
@@ -156,17 +179,6 @@ and RAGAM through handling quizzing events.The Enquire Quiz Club, one of the spl
 
 
 </div>
-
-
-
-
-
-
-
-
-
-
-
 </div>
 
 
@@ -181,11 +193,18 @@ and RAGAM through handling quizzing events.The Enquire Quiz Club, one of the spl
     var header = document.querySelector("header");
     header.classList.toggle("sticky", window.scrollY > 0);
   });
+
+
+ // Navbar javascript
+
+const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+})
+
 </script>
-
-
-
-
 
 <!-- Contactus JavaScript -->
 
@@ -201,6 +220,8 @@ element.setAttribute('src', 'images/clubhouse3.png');
 }
 
 </script>
+
+
 
 
 
