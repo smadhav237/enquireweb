@@ -30,7 +30,7 @@ body {
   height: 100vh;
   background-color: #212121;
 }
-h1 {
+h1 .events {
     padding-left:5rem;
     padding-top:1rem;
     padding-bottom:1rem;
