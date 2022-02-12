@@ -33,6 +33,7 @@ body {
 h1 {
     padding-left:5rem;
     padding-top:1rem;
+    padding-bottom:1rem;
     font-family: "Inconsolata", monospace;
     margin:0;
     color:#ff4532;
@@ -45,7 +46,7 @@ fieldset{
 legend{
     font-family: "Inconsolata",monospace;
     font-weight: 1000;
-    font-size: 32;
+    font-size: 36;
 }
 .artboard {
   display: flex;
@@ -71,13 +72,15 @@ legend{
   width: 40rem;
   -moz-perspective: 200rem;
   perspective: 200rem;
-  margin: 2rem;
+  margin: 4rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
   float :left;
-  border-top: 10rem solid white;
-  border-right: 1rem solid white;
-  border-left: 1rem solid white;
-  border-bottom: 2rem solid white;
-
+  border-top: 1rem solid white;
+  border-right: 0.5rem solid white;
+  border-left: 0.5rem solid white;
+  border-bottom: 1rem solid white;
+  border-radius: 1rem;
 }
 .card__side {
   height: 100%;
@@ -90,7 +93,7 @@ legend{
   /* We don't want to see the back part of the element. */
   backface-visibility: hidden;
   /* We don't want to see the back part of the element. */
-  border-radius: 1px;
+  border-radius: 2rem;
   overflow: auto;
   /* The image is overflowing the parent. */
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15);
@@ -103,7 +106,7 @@ legend{
   object-fit: cover;
 }
 .card__side--back {
-  background-color: #fff;
+  background-color: #212121;
   transform: rotateY(180deg);
 }
 .card:hover .card__side--back {
@@ -147,7 +150,7 @@ legend{
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
-  background-image: linear-gradient(to top right, rgba(30, 11, 54, 0.65), rgba(202, 55, 130, 0.65)), url(https://cdn.spacetelescope.org/archives/images/screen/heic0406a.jpg);
+  background-image:  url("../events/bg.jpg");
 }
 .card__heading {
   text-align: center;
@@ -170,19 +173,23 @@ legend{
   font-family: "Inconsolata", monospace;
   word-wrap: break-word;
   padding-top: 0%;
+  color: #fff;
 }
 .card__details ul {
   list-style: none;
   width: 80%;
   margin: 0 auto;
+  color: #fff;
 }
 .card__details ul li {
   text-align: center;
   font-size: 1.8rem;
   padding: 1rem;
+  color: #fff;
 }
 .card__details ul li:not(:last-child) {
   border-bottom: 1px solid #000;
+  color: #fff;
 }
 @media only screen and (max-width: 37.5em), only screen and (hover: none) {
   .card {
