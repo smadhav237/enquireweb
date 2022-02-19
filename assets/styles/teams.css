@@ -1,0 +1,73 @@
+body {
+background: #212121;
+color: #bfbfbf;
+font-family: 'Merriweather';
+}
+
+.list-team-members {
+    max-width: 1000px;
+    padding: 0px;
+    margin: 0px auto;
+  }
+.list-team-members li {
+    padding: 15px;
+    text-align: center;
+    list-style-type: none;
+    display: inline-block;
+    transition-duration: .3s;
+
+  }
+
+.list-team-members li a {
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    color:inherit;
+    transition-duration: .3s;
+  }
+
+  .list-team-members li a:hover {
+  transform: scale(1.01, 1.01);
+  border:2px solid #ff4532;
+  color:#ff4532;
+  border-radius: 5%;
+  transition-duration:.3s;
+
+  }
+
+  .list-team-members li a:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 200px;
+    width: 200px;
+    background-color: rgba(255,122,40,.2);
+    opacity: 0;
+    transition-duration: .3s;
+  }
+
+  .list-team-members li a:hover:after {
+    opacity: 1;
+  }
+
+  .list-team-members li img {
+    object-fit: cover;
+    object-position: center center;
+    height: 200px;
+    width: 200px;
+    border-radius:5%;
+    transition-duration:.3s;
+  }
+  .list-team-members li .member-title {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .team_members:hover .member{
+    filter: blur(3px);
+    transition-duration: .5s;
+  }
+  .team_members .member:hover{
+    filter: blur(0px);
+  }
