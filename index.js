@@ -22,3 +22,9 @@ function loadHTML(id, filename){
         return;
     }
 }
+
+function copyEmail(){
+    navigator.clipboard.writeText("enquire@nitc.ac.in");
+    alert("Copied email to clipboard");
+}
+
