@@ -1,50 +1,51 @@
 .iconlist {
   align-items: center;
   flex-wrap: nowrap;
-  display:flex;
+  display: flex;
   box-sizing: border-box;
 }
 
-.footer{
-padding-top:3vh;
-border-top:3px solid white;
+.footer {
+  padding-top: 3vh;
+  border-top: 3px solid white;
 }
-.icons{
+
+.icons {
   list-style: none;
-  width:45px;
+  width: 45px;
   height: 80px;
 }
 
 
 .icons a {
-  text-decoration:none;
+  text-decoration: none;
   font-size: 15px;
 
 }
 
-.h3{
-font-family: 'Oswald';
+.h3 {
+  font-family: 'Oswald';
 }
 
 
-.icon{
+.icon {
   border: 5px solid #bfbfbf;
 }
 
 .icons a .fab {
   /* font-size:0.9em; */
   width: 92%;
-  height:110%;
-  display:block;
-  background:#bfbfbf ;
-  border-radius:50%;
+  height: 110%;
+  display: block;
+  background: #bfbfbf;
+  border-radius: 50%;
 
 
   color: #212121;
 }
 
 .insta a:hover .fab {
-  color:#e4405f ;
+  color: #e4405f;
 }
 
 .twitter a:hover .fab {
@@ -53,34 +54,34 @@ font-family: 'Oswald';
 
 .fb a:hover .fab {
   background: #1877F2;
-  color:white;
+  color: white;
 }
 
 
 .discord a:hover .fab {
-  background:#738adb;
-  color:white;
+  background: #738adb;
+  color: white;
 }
 
 .linkedin a:hover .fab {
-  color:#3b5998 ;
+  color: #3b5998;
 }
 
 
 .clubhouse {
   position: relative;
-  width:70px;
-  height:70px;
-  display:block;
-  text-align:center;
+  width: 70px;
+  height: 70px;
+  display: block;
+  text-align: center;
   border-radius: 50%;
   padding: 6px;
   box-sizing: border-box;
-  text-decoration:none;
-  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+  text-decoration: none;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
   background: #bfbfbf;
   transition: .5s;
-  border-right:30vw;
+  border-right: 30vw;
 }
 
 
@@ -90,28 +91,29 @@ font-family: 'Oswald';
 
 /* Styling of Mail,Location and Suggestion */
 
-.secondlist{
-  font-size:0.9em;
-  list-style-type:none;
+.secondlist {
+  font-size: 0.9em;
+  list-style-type: none;
   display: flex;
 }
 
 
-.mailandloc{
-display:inline;
-margin-left:4vw;
+.mailandloc {
+  display: inline;
+  margin-left: 4vw;
 }
 
 
 
-.mailandloc a{
+.mailandloc a {
   text-decoration: none;
-      color: inherit;
+  color: inherit;
 }
 
-.secondlist span:hover{
-  color:#ff4532;
+.secondlist span:hover {
+  color: #ff4532;
 }
-hr{
-  color:white;
+
+hr {
+  color: white;
 }

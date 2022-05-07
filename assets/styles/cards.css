@@ -10,16 +10,19 @@
 html {
   font-size: 62.5%;
 }
+
 @media (max-width: 75em) {
   html {
     font-size: 56.25%;
   }
 }
+
 @media (max-width: 56.25em) {
   html {
     font-size: 50%;
   }
 }
+
 @media (min-width: 112.5em) {
   html {
     font-size: 75%;
@@ -30,24 +33,29 @@ body {
   height: 100vh;
   background-color: #212121;
 }
-h1 .events {
-    padding-left:5rem;
-    padding-top:1rem;
-    padding-bottom:1rem;
-    font-family: "Inconsolata", monospace;
-    margin:0;
-    color:#ff4532;
-   }
-fieldset{
-    color:#ff4532;
-    align-self: center;
-    margin-top: -6rem;
+
+.events>h1 {
+  padding-left: 5rem;
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+  font-family: "Inconsolata", monospace;
+  margin: 0;
+  color: #ff6b5a;
+  font-weight: 1000;
 }
-legend{
-    font-family: "Inconsolata",monospace;
-    font-weight: 1000;
-    font-size: 36;
+
+fieldset {
+  color: #ff4532;
+  align-self: center;
+  margin-top: -6rem;
 }
+
+legend {
+  font-family: "Inconsolata", monospace;
+  font-weight: 1000;
+  font-size: 36;
+}
+
 .artboard {
   display: flex;
   flex-wrap: wrap;
@@ -57,14 +65,17 @@ legend{
   padding-bottom: 0rem;
   height: auto;
   position: relative;
-  float:center;
+  float: center;
+  border-bottom: 2px solid white;
 }
+
 @media (max-width: 37.5em) {
   .artboard {
     padding: 0rem;
-    width:100%;
+    width: 100%;
   }
 }
+
 .card {
   flex: initial;
   position: relative;
@@ -75,13 +86,14 @@ legend{
   margin: 4rem;
   margin-left: 6rem;
   margin-right: 6rem;
-  float :left;
+  float: left;
   border-top: 1rem solid white;
   border-right: 0.5rem solid white;
   border-left: 0.5rem solid white;
   border-bottom: 1rem solid white;
   border-radius: 1rem;
 }
+
 .card__side {
   height: 100%;
   transition: all 0.8s ease;
@@ -99,22 +111,27 @@ legend{
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15);
   margin-top: 0rem;
 }
-.card_image{
+
+.card_image {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: auto;
   object-fit: cover;
 }
+
 .card__side--back {
   background-color: #212121;
   transform: rotateY(180deg);
 }
+
 .card:hover .card__side--back {
   transform: rotateY(0);
 }
+
 .card:hover .card__side--front {
   transform: rotateY(-180deg);
 }
+
 .card__theme {
   position: absolute;
   top: 50%;
@@ -124,10 +141,12 @@ legend{
   width: 90%;
   text-align: center;
 }
+
 .card__theme-box {
   color: #fff;
   margin-bottom: 8rem;
 }
+
 .card__subject {
   font-family: "Inconsolata", monospace;
   letter-spacing: 0.8rem;
@@ -135,13 +154,15 @@ legend{
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
+
 .card__title {
   font-family: "VT323", monospace;
   text-transform: uppercase;
-  font-size: 6rem ;
+  font-size: 6rem;
   -webkit-text-stroke: 2px black;
   font-weight: 100;
 }
+
 .card__cover {
   position: relative;
   background-size: cover;
@@ -150,8 +171,9 @@ legend{
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
-  background-image:  url("../events/bg.jpg");
+  background-image: url("../events/bg.jpg");
 }
+
 .card__heading {
   text-align: center;
   color: #fff;
@@ -161,6 +183,7 @@ legend{
   transform: translate(-50%, -50%);
   width: 75%;
 }
+
 .card__heading-span {
   font-family: "VT323", monospace;
   font-size: 4.2rem;
@@ -169,28 +192,33 @@ legend{
   padding: 1rem 1.5rem;
   color: #fff;
 }
+
 .card__details {
   font-family: "Inconsolata", monospace;
   word-wrap: break-word;
   padding-top: 0%;
   color: #fff;
 }
+
 .card__details ul {
   list-style: none;
   width: 80%;
   margin: 0 auto;
   color: #fff;
 }
+
 .card__details ul li {
   text-align: center;
   font-size: 1.8rem;
   padding: 1rem;
   color: #fff;
 }
+
 .card__details ul li:not(:last-child) {
   border-bottom: 1px solid #000;
   color: #fff;
 }
+
 @media only screen and (max-width: 37.5em), only screen and (hover: none) {
   .card {
     height: auto;
@@ -198,23 +226,29 @@ legend{
     background-color: #fff;
     box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15);
   }
+
   .card__side {
     height: auto;
     position: relative;
     box-shadow: none;
   }
+
   .card__side--front {
     clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
   }
+
   .card__side--back {
     transform: rotateY(0);
   }
+
   .card:hover .card__side--front {
     transform: rotateY(0);
   }
+
   .card__details {
     padding: 3rem 2rem;
   }
+
   .card__theme {
     position: relative;
     top: 0;
@@ -224,9 +258,11 @@ legend{
     padding: 5rem 4rem 1.5rem 4rem;
     text-align: right;
   }
+
   .card__theme-box {
     margin-bottom: 1.5rem;
   }
+
   .card__title {
     font-size: 4rem;
   }
