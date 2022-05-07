@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #212121;
+  color: #bfbfbf;
+  font-family: 'Merriweather';
+}
+
+
+/* Navbar */
+
+header {
+  background: #18191A;
+  position: fixed;
+  top: 0;
+
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 1s;
+  padding: 5vh 5vw 1vh 5vw;
+  z-index: 100000;
+}
+
+header .enquirenav {
+  font-family: 'Frank Ruhl Libre', sans-serif;
+  position: relative;
+  font-weight: 550;
+  color: #bfbfbf;
+  text-decoration: none;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  transition: 1s;
+}
+
+header.sticky {
+  padding: 1vh 5vw 1vh 5vw;
+  background: #bfbfbf;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  position: relative;
+  list-style: none;
+}
+
+header ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #bfbfbf;
+  letter-spacing: 2px;
+  font-weight: 700;
+  transition: 1s;
+  font-size: 1.3rem;
+}
+
+
+.banner {
+  position: relative;
+  width: 100%;
+  /* height: 100vh; */
+}
+
+header.sticky .enquirenav {
+  color: #212121;
+}
+
+header.sticky ul li a {
+  color: #212121;
+}
+
+header.sticky .bar {
+  transition: 1s;
+  background: #212121;
+}
+
+header.sticky .toggle-button {
+  top: 1rem;
+  right: 1rem;
+  transition: 1s;
+}
+
+header ul li a:hover {
+  text-decoration: none;
+  color: #ff4532;
+}
+
+header ul li a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #ff4532;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+header ul li a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+
+/* Hamburger */
+.toggle-button {
+  position: absolute;
+  top: 2.5rem;
+  right: 1.5rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  transition: 1s;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #bfbfbf;
+  border-radius: 10px;
+}
+
+@media (max-width: 900px) {
+  header {
+    flex-direction: column;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar {
+    display: inline-block;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+    font-size: 9rem;
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.2rem 1rem;
+    font-size: 1.8rem;
+  }
+  .navbar-links>ul>li>a{
+    font-size: 15pt;
+    font-family:Inconsolata;
+  }
+
+  .navbar-links.active {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.enquirenav, .header ul {
+  font-size: 8.5rem;
+}
+
+.footer>h3 {
+  font-family: 'Frank ruhl Libre', sans-serif;
+  margin-left: 2%;
+  margin-bottom: 1%;
+}
+
+.ann-section {
+  margin-top: 2%;
+  padding-bottom: 2%;
+  left: 25%;
+  top: 25%;
+  border: 2px solid white;
+}
+
+.ann-section>h1 {
+  color: #ff4532;
+  font-family: 'Frank Ruhl Libre', sans-serif;
+  padding: 2vh 0;
+}
+
+.ann-section>.list-group {
+  position: relative;
+  left: 12.5%;
+  top: 2%;
+  width: 75%;
+  height: 200px;
+  overflow-y: scroll;
+  border: 0.1rem solid white;
+}
+
+.ann-list>a {
+  color: #bfbfbf;
+  height: 40px;
+  font-size: 1.3rem;
+}
+
+.ann-list>a:nth-child(2n+1) {
+  background-color: #212121;
+}
+
+.ann-list>a:nth-child(2n+2) {
+  background-color: #18191a;
+}
+
+.ann-list>a:hover {
+  background-color: #bfbfbf;
+  color: #ff4532;
+}
+
+/*
+font-family: 'Merriweather', serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Source Serif 4', sans-serif;
+*/
